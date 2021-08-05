@@ -6,6 +6,7 @@ import java.util.Optional;
 import com.dprill.controledeponto.model.JornadaTrabalho;
 import com.dprill.controledeponto.repository.JornadaRepository;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -13,6 +14,7 @@ public class JornadaService {
     
     JornadaRepository jornadaRepository;
 
+    @Autowired
     public JornadaService(JornadaRepository jornadaRepository){
         this.jornadaRepository = jornadaRepository;
     }
